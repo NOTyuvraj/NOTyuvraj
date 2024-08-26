@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    * {
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: hsl(0, 0%, 8%);
+      color: hsl(0, 0%, 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    #main-box {
+      cursor: default;
+      text-align: center;
+      background-color: hsl(0, 0%, 12%);
+      position: relative;
+      height: 32.5rem;
+      width: 20rem;
+      font-family: "Inter";
+      border-radius: 12px;
+
+    }
+
+    #card-image {
+      height: 5.5rem;
+      width: 5.5rem;
+      border-radius: 100%;
+      margin: 13px;
+
+    }
+
+    #main-head {
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    #main-location {
+      color: hsl(75, 94%, 57%);
+      font-size: 13px;
+      margin: 12px;
+    }
+
+    #main-description {
+      margin-top: 24px;
+      font-size: small;
+    }
+
+    #main-btns {
+      display: grid;
+      place-items: center;
+      position: relative;
+      margin-top: 20px;
+
+    }
+
+    .btn {
+      background-color: hsl(0, 0%, 20%);
+      color: white;
+      width: 16rem;
+      margin: 6px;
+      height: 2.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: small;
+      letter-spacing: 0.5px;
+      border-radius: 9px;
+    }
+
+    .btn-hover {
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 8%);
+      font-weight: bold;
+      font-size: small;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="main-box">
+    <img id="card-image" src="./assets/images/avatar-jessica.jpeg" alt=""><br>
+    <div id="main-head">
+      Jessica Randall <br>
+    </div>
+    <div id="main-location">
+      London, United Kingdom <br>
+    </div>
+    <div id="main-description">
+      "Front-end developer and avid reader." <br>
+    </div>
+
+    <div id="main-btns">
+      <button class="btn">GitHub <br></button>
+      <button class="btn">Frontend Mentor <br></button>
+      <button class="btn">LinkedIn <br></button>
+      <button class="btn">Twitter <br></button>
+      <button class="btn">Instagram <br></button>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script>
+
+    const btns = document.querySelectorAll(".btn");
+
+    btns.forEach(function(btn){
+      btn.addEventListener('mouseover' , function(e){
+        const current = e.currentTarget;
+        current.classList.add("btn-hover");
+      })
+      btn.addEventListener('mouseout' , function(e){
+        const current = e.currentTarget;
+        current.classList.remove("btn-hover");
+      })
+    })
+
+  </script>
+
+</body>
+
+</html>
