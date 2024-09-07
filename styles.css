@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Rubik";
+    color: white;
+    /* background-image: url("./images/jeremy-bishop-uAfZBP-GtiA-unsplash.jpg"); */
+    background-image: url("./images/pexels-timmossholder-1154739.jpg");
+    background-color: rgb(79, 79, 79);
+    background-blend-mode: multiply;
+    background-size: cover;
+
+
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(77 53 51);
+    height: 5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    padding: 0 18px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.links {
+    padding: 12px;
+}
+
+main {
+    height: 25rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 2rem;
+    align-content: center;
+}
+
+main>h1 {
+    padding: 20px;
+}
+
+.desc {
+    padding: 20px;
+    font-size: 1.2rem;
+}
